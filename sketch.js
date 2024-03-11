@@ -3,6 +3,7 @@ let cWidth = 1000;
 let cHeight = 1000
 let capture;
 let vid;
+
 function setup() {
     cnv = createCanvas(cWidth, cHeight);
 
@@ -16,16 +17,13 @@ function setup() {
     //video: {
       //facingMode: "user"
     //} 
-      //facingMode: {
-        //exact: "environment"
-      //}
     }    
     video: {
       facingMode: "user"
     } 
   };
-  capture = createCapture(VIDEO, constraints);
-  //capture = createCapture(constraints);
+  capture = createCapture(VIDEO);
+  capture = createCapture(constraints);
   
     capture.hide();
 }
