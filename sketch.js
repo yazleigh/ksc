@@ -1,22 +1,24 @@
 let totalSlices = 16; // the number of slices the image will start with... should be divisable by 4
-let cWidth = displayWidth;
-let cHeight = displayWidth;
+let cWidth = 1000;
+let cHeight = 1000;
 let capture;
 let vid;
 
 function setup() {
-    cnv = createCanvas(displayWidth, displayWidth);
-    
+    cnv = createCanvas(cWidth, cHeight);
+  
+  
+  //for mobile use: this determines which camera the sketch will use, for selfie camera use 'environment' option. for rear camera use 'user' option.  
   var constraints = {
     audio: false,
-    //video: {
-      //facingMode: {
-        //exact: "environment"
-      //}
-    //}    
     video: {
-      facingMode: "user"
-    } 
+      facingMode: {
+        exact: "environment"
+      }
+    }    
+    //video: {
+      //facingMode: "user"
+    //} 
   };
   capture = createCapture(VIDEO);
   capture = createCapture(constraints);
