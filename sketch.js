@@ -18,8 +18,8 @@ function setup() {
       //facingMode: "user"
     //} 
   };
-  capture = createCapture(VIDEO);
-  capture = createCapture(constraints);
+  capture = createCapture(VIDEO, constraints);
+  //capture = createCapture(constraints);
   
     capture.hide();
 }
