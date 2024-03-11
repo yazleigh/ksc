@@ -21,6 +21,7 @@ function setup() {
   };
   
   capture = createCapture(VIDEO);
+    capture = createCapture(restraints);
   capture.hide();
 }
 
