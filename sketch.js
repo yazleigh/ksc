@@ -13,7 +13,7 @@ function setup() {
       //facingMode: {
         //exact: "environment"
       //}
-    }    
+    //}    
     video: {
       facingMode: "user"
     } 
