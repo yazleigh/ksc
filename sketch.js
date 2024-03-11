@@ -1,32 +1,29 @@
 let totalSlices = 16; // the number of slices the image will start with... should be divisable by 4
-let cWidth = 1000;
-let cHeight = 1000
+let cWidth = 600;
+let cHeight = 600
 let capture;
 let vid;
 
+
 function setup() {
     cnv = createCanvas(cWidth, cHeight);
-
+    
   var constraints = {
     audio: false,
-    video: {
-      facingMode: {
-        exact: "environment"
-      }
-    }    
+   // video: {
+      //facingMode: {
+       // exact: "environment"
+      //}
+   // }    
     //video: {
       //facingMode: "user"
     //} 
-    }    
-    video: {
-      facingMode: "user"
-    } 
   };
-  capture = createCapture(VIDEO);
-  capture = createCapture(constraints);
   
-    capture.hide();
+  capture = createCapture(VIDEO);
+  capture.hide();
 }
+
 function draw() {
     // console.log(capture.loadedmetadata)
     if (capture.loadedmetadata == true) {
