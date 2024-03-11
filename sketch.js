@@ -11,14 +11,14 @@ function setup() {
   //for mobile use: this determines which camera the sketch will use, for selfie camera use 'environment' option. for rear camera use 'user' option.  
   var constraints = {
     audio: false,
-    video: {
-      facingMode: {
-        exact: "environment"
-      }
-    }    
     //video: {
-      //facingMode: "user"
-    //} 
+     // facingMode: {
+        //exact: "environment"
+      //}
+    //}    
+    video: {
+      facingMode: "user"
+    } 
   };
   capture = createCapture(VIDEO, contraints);
   
