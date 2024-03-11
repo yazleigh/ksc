@@ -1,11 +1,11 @@
 let totalSlices = 16; // the number of slices the image will start with... should be divisable by 4
-let cWidth = 500;
-let cHeight = 500
+let cWidth = 300;
+let cHeight = 300
 let capture;
 let vid;
 
 function setup() {
-    cnv = createCanvas(cWidth, cHeight);
+    cnv = createCanvas(300, 300);
     
   var constraints = {
     audio: false,
