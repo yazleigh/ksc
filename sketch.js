@@ -1,6 +1,6 @@
 let totalSlices = 16; // the number of slices the image will start with... should be divisable by 4
-let cWidth = 1000;
-let cHeight = 1000;
+let cWidth = displayWidth;
+let cHeight = displayHeight;
 let capture;
 let vid;
 
