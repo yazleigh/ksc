@@ -15,12 +15,12 @@ function setup() {
        // exact: "environment"
       //}
    // }    
-    //video: {
-      //facingMode: "user"
-    //} 
+    video: {
+      facingMode: "user"
+    } 
   };
   
-  capture = createCapture(VIDEO, constraints);
+  capture = createCapture(VIDEO);
   capture.hide();
 }
 
