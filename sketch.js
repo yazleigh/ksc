@@ -1,6 +1,6 @@
 let totalSlices = 16; // the number of slices the image will start with... should be divisable by 4
-let cWidth = 500;
-let cHeight = 500;
+let cWidth = displayWidth;
+let cHeight = displayWidth;
 let capture;
 let vid;
 
@@ -18,8 +18,8 @@ function setup() {
       facingMode: "user"
     } 
   };
-  capture = createCapture(VIDEO, constraints);
-  //capture = createCapture(constraints);
+  capture = createCapture(VIDEO);
+  capture = createCapture(constraints);
   
     capture.hide();
 }
