@@ -20,9 +20,9 @@ function setup() {
       facingMode: "user"
     } 
   };
-  capture = createCapture(VIDEO, contraints);
-  
-    capture.hide();
+  capture = createCapture(VIDEO);
+  capture = createCapture(constraints);  
+  capture.hide();
 }
 
 function draw() {
