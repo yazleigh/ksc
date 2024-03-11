@@ -7,7 +7,6 @@ let vid;
 
 function setup() {
     cnv = createCanvas(cWidth, cHeight);
-      capture = createCapture(VIDEO);
     
   var constraints = {
     audio: false,
@@ -20,7 +19,8 @@ function setup() {
       facingMode: "user"
     } 
   };
-
+    
+  capture = createCapture(constraints);
   capture.hide();
 }
 
